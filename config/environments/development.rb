@@ -63,6 +63,10 @@ Rails.application.configure do
 
 
   config.hosts.clear
+
+  host = 'localhost:3000'
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
